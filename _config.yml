@@ -1,0 +1,11 @@
+# Site settings
+name: Gelecek
+title: Gelecek
+description: "Can sıkıntısıyla bulunulmuş bir girişim"
+baseurl: ""
+author: berkantkz
+#repository: twrpbuilder/twrpbuilder.github.io
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
