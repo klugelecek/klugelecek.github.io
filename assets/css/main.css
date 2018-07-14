@@ -2543,16 +2543,21 @@
 				-webkit-flex-wrap: wrap;
 				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
-				width: calc(100% + 2em);
+				/* width: calc(100% + 2em); */
 			}
 
 				.mini-posts > * {
-					margin: 2em 2em 0 0;
-					width: calc(50% - 2em);
+					margin: auto;
+					/* margin: 2em 2em 0 0; */
+					/* width: calc(50% - 2em); */
 				}
 
 				.mini-posts > :nth-child(-n + 2) {
 					margin-top: 0;
+				}
+				
+				.sidebar-latestPost .sidebar-latestPost-header {
+					text-align: center;
 				}
 
 		}
@@ -2567,6 +2572,15 @@
 				.mini-posts > * {
 					margin: 0 0 2em 0;
 					width: 100%;
+				}
+				
+				.mini-post header {
+					min-height: 6em;
+				}
+				
+				.mini-post header .author {
+					position: absolute;
+					top: 5em;
 				}
 
 		}

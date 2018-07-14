@@ -11,10 +11,10 @@
 		</section>
 
 	<!-- Mini Posts -->
-		<section>
+		<section class="sidebar-latestPost">
 			{% assign allPosts = site.posts | sort: 'date' %}
 			{% for post in allPosts limit: 1 %}
-			<h3>En güncel:</h3>
+			<h3 class="sidebar-latestPost-header">En güncel:</h3>
 			<div class="mini-posts">
 					<article class="mini-post">
 						<header>
