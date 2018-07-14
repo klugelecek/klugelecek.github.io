@@ -4,7 +4,7 @@ title: Gelecek
 ---
 <!-- Posts -->
 {% assign allPosts = site.posts | sort: 'date' %}
-{% for post in site.posts %}
+{% for post in allPosts %}
 	<article class="post">
 		<header>
 			<div class="title">
