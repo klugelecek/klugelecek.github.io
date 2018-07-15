@@ -9,3 +9,16 @@ author: berkantkz
 # Build settings
 markdown: kramdown
 permalinks: pretty
+
+
+defaults:
+# -   
+#  scope:
+#    type: pages
+#  values:
+#
+ -   
+  scope:
+    type: posts
+  values:
+    layout: post
