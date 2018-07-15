@@ -21,7 +21,7 @@ permalink: /kategoriler/futbol/
 			</div>
 		</header>
 		<a href="{{ post.url }}" class="image featured"><img src="/images/pic01.jpg" alt="" /></a>
-		<p>{{ post.content | truncate: 249 }}</p>
+		<p>{{ post.content | truncate: 249 | markdownify }}</p>
 		<footer>
 			<!--
 			<ul class="actions">
