@@ -17,10 +17,10 @@ permalink: /yazar/berkant-korkmaz/
 			</div>
 			<div class="meta">
 				<time class="published" datetime="2015-11-01">{{ post.date | date: "%B %e, %Y" }}</time>
-				<a href="{{ site.data.authors[post.author].url }}" class="author"><span class="name">{{ post.author }}</span><img src="/images/avatar.jpg" alt="" /></a>
+				<a href="{{ site.data.authors[post.author].url }}" class="author"><span class="name">{{ post.author }}</span><img src="{{ site.data.authors[post.author].image }}" alt="" /></a>
 			</div>
 		</header>
-		<a href="{{ post.url }}" class="image featured"><img src="/images/pic01.jpg" alt="" /></a>
+		<a href="{{ post.url }}" class="image featured"><img src="{% if post.cover %}{{ post.cover }}{% else %}/assets/images/no-cover.jpg{% endif %}" alt="" /></a>
 		<p>{{ post.content | truncate: 249 | markdownify}}</p>
 		<footer>
 			<!--
