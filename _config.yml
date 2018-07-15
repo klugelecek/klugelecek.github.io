@@ -12,11 +12,12 @@ permalinks: pretty
 
 
 defaults:
-# -   
-#  scope:
-#    type: pages
-#  values:
-#
+ -   
+  scope:
+    type: pages
+  values:
+    layout: post
+
  -   
   scope:
     type: posts

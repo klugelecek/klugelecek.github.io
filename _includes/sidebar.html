@@ -16,19 +16,19 @@
 			{% for post in allPosts limit: 1 %}
 			<h3 class="sidebar-latestPost-header">En güncel:</h3>
 			<div class="mini-posts">
-					<article class="mini-post">
-						<header>
-							<h3><a href="{{post.url}}">{{ post.title }}</a></h3>
-							<time class="published" datetime="2015-10-20">{{ post.date | date: "%B %e, %Y" }}</time>
-							<!--
-							<a href="{{site.data.authors[post.author].url}}" class="author">
-								<span class="name">{{ post.author }}</span>
-								<img src="/images/avatar.jpg" alt="" />
-							</a>
-							-->
-						</header>
-						<a href="{{post.url}}" class="image"><img src="{% if post.cover %}{{ post.cover }}{% else %}/assets/images/no-cover.jpg{% endif %}" alt="" /></a>
-					</article>
+				<article class="mini-post">
+					<header>
+						<h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+						<time class="published" datetime="2015-10-20">{{ post.date | date: "%B %e, %Y" }}</time>
+						<!--
+						<a href="{{site.data.authors[post.author].url}}" class="author">
+							<span class="name">{{ post.author }}</span>
+							<img src="/images/avatar.jpg" alt="" />
+						</a>
+						-->
+					</header>
+					<a href="{{post.url}}" class="image"><img src="{% if post.cover %}{{ post.cover }}{% else %}/assets/images/no-cover.jpg{% endif %}" alt="" /></a>
+				</article>
 			</div>
 			{% endfor %}
 		</section>

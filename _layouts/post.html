@@ -111,7 +111,7 @@
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2015-11-01">{{ page.date | date: "%B %e, %Y" }}</time>
-										<a href="{{ site.data.authors[page.author].url }}" class="author"><span class="name">{{ page.author }}</span><img src="images/avatar.jpg" alt="" /></a>
+										<a href="{{ site.data.authors[page.author].url }}" class="author"><span class="name">{{ page.author }}</span><img src="{{ site.data.authors[page.author].image }}" alt="" /></a>
 									</div>
 								</header>
 								{{ content }}
